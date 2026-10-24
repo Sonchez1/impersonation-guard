@@ -119,6 +119,10 @@ export interface DetectorOptions {
   /** Treat the brand's own name on the brand's own domain as the sender, not a claim
    *  (linkedin@e.linkedin.com). Off by default for parity; the extension turns it on. */
   brandOnOwnDomainIsBenign?: boolean;
+  /** A sender or link host that is a subdomain of a protected domain (mail.example.com for
+   *  example.com) is the genuine domain, never a Layer 1 lookalike of it. Off by default so
+   *  verdicts match the Python package; the extension turns it on. */
+  skipProtectedSubdomains?: boolean;
 }
 
 export class Detector {
@@ -131,10 +135,12 @@ export class Detector {
   readonly blocklist: Set<string>;
   readonly protectedDomains: Set<string>;
   readonly registrableLookalike: boolean;
+  readonly skipProtectedSubdomains: boolean;
 
   constructor(protectedNames: string[], opts: DetectorOptions = {}) {
     this.protected = protectedNames;
     this.registrableLookalike = opts.registrableLookalike ?? false;
+    this.skipProtectedSubdomains = opts.skipProtectedSubdomains ?? false;
     this.lookalike = new LookalikeDetector(protectedNames);
     this.scorer = new SenderScorer(protectedNames);
     this.scorer.extractor.brandOnOwnDomainIsBenign = opts.brandOnOwnDomainIsBenign ?? false;
@@ -178,7 +184,7 @@ export class Detector {
       for (const c of [msg.senderName ?? "", senderDomain, ...hosts].filter((x) => x)) {
         // A subdomain of a protected domain is the genuine domain (mail.example.com is
         // example.com), never a lookalike of it.
-        if ((c === senderDomain || hosts.includes(c)) && this.protectedDomains.has(registrable(c))) continue;
+        if (this.skipProtectedSubdomains && (c === senderDomain || hosts.includes(c)) && this.protectedDomains.has(registrable(c))) continue;
         const ms = this.lookalike.check(c);
         if (ms.length) {
           lookalikes.push(...ms);

@@ -83,10 +83,10 @@ export function createCore(stores: Stores) {
     const protectedNames = resolveProtected(settings, message, hosts);
     let intent: RuleIntentClassifier | LLMIntentClassifier = new RuleIntentClassifier();
     if (settings.ollama.enabled) intent = new LLMIntentClassifier(new OllamaBackend(settings.ollama.model, settings.ollama.host));
-    const det = new Detector(protectedNames, { intent, registrableLookalike: true, brandOnOwnDomainIsBenign: true });
+    const det = new Detector(protectedNames, { intent, registrableLookalike: true, brandOnOwnDomainIsBenign: true, skipProtectedSubdomains: true });
     let verdict = await det.analyze(message);
     if (verdict.intent?.label === "unknown" && verdict.intent.rationale.startsWith("backend error")) {
-      verdict = await new Detector(protectedNames, { registrableLookalike: true, brandOnOwnDomainIsBenign: true }).analyze(message);
+      verdict = await new Detector(protectedNames, { registrableLookalike: true, brandOnOwnDomainIsBenign: true, skipProtectedSubdomains: true }).analyze(message);
       verdict.reasons.push("local model unreachable; rule classifier used");
     }
     const capped = requireCorroboration(verdict);

@@ -18,4 +18,4 @@ export {
 export { explainVerdict, type Explanation, type EvidenceItem } from "./explain";
 
 export const ENGINE_VERSION = "0.1.0";
-export const UPSTREAM_VERSION = "impersonation-detector 0.3.0";
+export const UPSTREAM_VERSION = "impersonation-detector 0.4.0";

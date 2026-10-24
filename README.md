@@ -80,7 +80,7 @@ Then enable *Local AI* in Settings. Without it, the rule classifier is used.
 ## Repository layout
 
 ```
-packages/engine      TypeScript port of impersonation-detector 0.3.0 (Layers 1-3, fusion, explanations)
+packages/engine      TypeScript port of impersonation-detector 0.4.0 (Layers 1-3, fusion, explanations)
 packages/extension   Manifest V3 extension: service worker, inbox overlay, form interrupt, popup, options
 fixtures/            parity.jsonl (Python verdicts for the full benchmark) and the demo pages
 tools/               export_parity.py (regenerates parity.jsonl from the Python package), icon generator

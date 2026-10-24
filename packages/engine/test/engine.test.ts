@@ -100,7 +100,7 @@ describe("institution lure with code relay", () => {
 
 describe("genuine subdomains", () => {
   it("does not call a subdomain of the protected domain a lookalike", async () => {
-    const det = new Detector(["linkedin.com", "LinkedIn"], { registrableLookalike: true, brandOnOwnDomainIsBenign: true });
+    const det = new Detector(["linkedin.com", "LinkedIn"], { registrableLookalike: true, brandOnOwnDomainIsBenign: true, skipProtectedSubdomains: true });
     const v = await det.analyze({
       body: "Your weekly jobs round-up. New jobs just for you, sent every week. TikTok Inc. Software Engineer Graduate. https://www.linkedin.com/jobs/view/1",
       senderName: "LinkedIn", senderAddress: "linkedin@e.linkedin.com", subject: "You may be a top applicant for Software Engineer Graduate",
