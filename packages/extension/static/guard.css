@@ -1,0 +1,3 @@
+/* Outer container styles only; everything visible lives inside a shadow root (see ui/panel.ts). */
+[data-impersonation-guard="banner"] { display: block; }
+[data-impersonation-guard="interrupt"] { display: block; }

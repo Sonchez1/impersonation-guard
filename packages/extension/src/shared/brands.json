@@ -1,0 +1,428 @@
+{
+  "_comment": "Commonly impersonated organisations. A brand is added to the protected set for a message only when its name or domain appears in that message, so the list scopes detection rather than widening it. Edit freely; the person's own list in Settings is always included.",
+  "brands": [
+    {
+      "name": "LinkedIn",
+      "domains": [
+        "linkedin.com"
+      ],
+      "names": [
+        "linkedin"
+      ]
+    },
+    {
+      "name": "Indeed",
+      "domains": [
+        "indeed.com"
+      ],
+      "names": [
+        "indeed"
+      ]
+    },
+    {
+      "name": "Glassdoor",
+      "domains": [
+        "glassdoor.com"
+      ],
+      "names": [
+        "glassdoor"
+      ]
+    },
+    {
+      "name": "Workday",
+      "domains": [
+        "workday.com",
+        "myworkday.com"
+      ],
+      "names": [
+        "workday"
+      ]
+    },
+    {
+      "name": "Greenhouse",
+      "domains": [
+        "greenhouse.io"
+      ],
+      "names": [
+        "greenhouse"
+      ]
+    },
+    {
+      "name": "Lever",
+      "domains": [
+        "lever.co"
+      ],
+      "names": [
+        "lever"
+      ]
+    },
+    {
+      "name": "Google",
+      "domains": [
+        "google.com",
+        "gmail.com",
+        "googlemail.com"
+      ],
+      "names": [
+        "google",
+        "gmail"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "domains": [
+        "microsoft.com",
+        "outlook.com",
+        "live.com",
+        "office.com",
+        "microsoftonline.com",
+        "hotmail.com"
+      ],
+      "names": [
+        "microsoft",
+        "outlook",
+        "office 365",
+        "onedrive"
+      ]
+    },
+    {
+      "name": "Apple",
+      "domains": [
+        "apple.com",
+        "icloud.com"
+      ],
+      "names": [
+        "apple",
+        "icloud",
+        "app store"
+      ]
+    },
+    {
+      "name": "Amazon",
+      "domains": [
+        "amazon.com"
+      ],
+      "names": [
+        "amazon"
+      ]
+    },
+    {
+      "name": "PayPal",
+      "domains": [
+        "paypal.com"
+      ],
+      "names": [
+        "paypal"
+      ]
+    },
+    {
+      "name": "Venmo",
+      "domains": [
+        "venmo.com"
+      ],
+      "names": [
+        "venmo"
+      ]
+    },
+    {
+      "name": "Zelle",
+      "domains": [
+        "zellepay.com"
+      ],
+      "names": [
+        "zelle"
+      ]
+    },
+    {
+      "name": "Cash App",
+      "domains": [
+        "cash.app"
+      ],
+      "names": [
+        "cash app",
+        "cashapp"
+      ]
+    },
+    {
+      "name": "Chase",
+      "domains": [
+        "chase.com"
+      ],
+      "names": [
+        "chase"
+      ]
+    },
+    {
+      "name": "Bank of America",
+      "domains": [
+        "bankofamerica.com"
+      ],
+      "names": [
+        "bank of america",
+        "bankofamerica"
+      ]
+    },
+    {
+      "name": "Wells Fargo",
+      "domains": [
+        "wellsfargo.com"
+      ],
+      "names": [
+        "wells fargo",
+        "wellsfargo"
+      ]
+    },
+    {
+      "name": "Citi",
+      "domains": [
+        "citi.com",
+        "citibank.com"
+      ],
+      "names": [
+        "citibank",
+        "citi"
+      ]
+    },
+    {
+      "name": "Capital One",
+      "domains": [
+        "capitalone.com"
+      ],
+      "names": [
+        "capital one",
+        "capitalone"
+      ]
+    },
+    {
+      "name": "USPS",
+      "domains": [
+        "usps.com"
+      ],
+      "names": [
+        "usps",
+        "postal service"
+      ]
+    },
+    {
+      "name": "UPS",
+      "domains": [
+        "ups.com"
+      ],
+      "names": [
+        "ups"
+      ]
+    },
+    {
+      "name": "FedEx",
+      "domains": [
+        "fedex.com"
+      ],
+      "names": [
+        "fedex"
+      ]
+    },
+    {
+      "name": "DHL",
+      "domains": [
+        "dhl.com"
+      ],
+      "names": [
+        "dhl"
+      ]
+    },
+    {
+      "name": "IRS",
+      "domains": [
+        "irs.gov"
+      ],
+      "names": [
+        "irs",
+        "internal revenue service"
+      ]
+    },
+    {
+      "name": "Social Security Administration",
+      "domains": [
+        "ssa.gov"
+      ],
+      "names": [
+        "social security administration",
+        "ssa"
+      ]
+    },
+    {
+      "name": "Federal Student Aid",
+      "domains": [
+        "studentaid.gov"
+      ],
+      "names": [
+        "fafsa",
+        "studentaid",
+        "federal student aid"
+      ]
+    },
+    {
+      "name": "USCIS",
+      "domains": [
+        "uscis.gov"
+      ],
+      "names": [
+        "uscis",
+        "immigration services"
+      ]
+    },
+    {
+      "name": "ID.me",
+      "domains": [
+        "id.me"
+      ],
+      "names": [
+        "id.me"
+      ]
+    },
+    {
+      "name": "Netflix",
+      "domains": [
+        "netflix.com"
+      ],
+      "names": [
+        "netflix"
+      ]
+    },
+    {
+      "name": "Instagram",
+      "domains": [
+        "instagram.com"
+      ],
+      "names": [
+        "instagram"
+      ]
+    },
+    {
+      "name": "Facebook",
+      "domains": [
+        "facebook.com",
+        "meta.com"
+      ],
+      "names": [
+        "facebook",
+        "meta"
+      ]
+    },
+    {
+      "name": "X",
+      "domains": [
+        "x.com",
+        "twitter.com"
+      ],
+      "names": [
+        "twitter"
+      ]
+    },
+    {
+      "name": "Discord",
+      "domains": [
+        "discord.com",
+        "discord.gg"
+      ],
+      "names": [
+        "discord"
+      ]
+    },
+    {
+      "name": "Dropbox",
+      "domains": [
+        "dropbox.com"
+      ],
+      "names": [
+        "dropbox"
+      ]
+    },
+    {
+      "name": "DocuSign",
+      "domains": [
+        "docusign.com",
+        "docusign.net"
+      ],
+      "names": [
+        "docusign"
+      ]
+    },
+    {
+      "name": "Zoom",
+      "domains": [
+        "zoom.us",
+        "zoom.com"
+      ],
+      "names": [
+        "zoom"
+      ]
+    },
+    {
+      "name": "Coinbase",
+      "domains": [
+        "coinbase.com"
+      ],
+      "names": [
+        "coinbase"
+      ]
+    },
+    {
+      "name": "Robinhood",
+      "domains": [
+        "robinhood.com"
+      ],
+      "names": [
+        "robinhood"
+      ]
+    },
+    {
+      "name": "Canvas",
+      "domains": [
+        "instructure.com"
+      ],
+      "names": [
+        "canvas",
+        "instructure"
+      ]
+    },
+    {
+      "name": "Duo",
+      "domains": [
+        "duosecurity.com",
+        "duo.com"
+      ],
+      "names": [
+        "duo security",
+        "duo mobile"
+      ]
+    },
+    {
+      "name": "Okta",
+      "domains": [
+        "okta.com"
+      ],
+      "names": [
+        "okta"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "domains": [
+        "github.com"
+      ],
+      "names": [
+        "github"
+      ]
+    },
+    {
+      "name": "Slack",
+      "domains": [
+        "slack.com"
+      ],
+      "names": [
+        "slack"
+      ]
+    }
+  ]
+}

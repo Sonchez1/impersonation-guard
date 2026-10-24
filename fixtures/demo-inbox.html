@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="guard-protected" content="northfieldstate.edu,Northfield State University,NSU">
+  <title>Demo inbox · Impersonation Guard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #202124; background: #f6f8fc; }
+    .bar { background: #fff; border-bottom: 1px solid #e0e3e7; padding: 10px 20px; display: flex; align-items: center; gap: 12px; }
+    .bar .logo { font-weight: 700; color: #5f6368; letter-spacing: .02em; }
+    .bar .note { color: #5f6368; font-size: 12.5px; margin-left: auto; }
+    .layout { display: grid; grid-template-columns: 200px 1fr; min-height: calc(100vh - 45px); }
+    nav { padding: 16px 12px; color: #444746; font-size: 13.5px; }
+    nav div { padding: 6px 12px; border-radius: 999px; }
+    nav div.active { background: #d3e3fd; color: #001d35; font-weight: 600; }
+    .thread { background: #fff; margin: 16px 16px 40px 0; border-radius: 16px; padding: 10px 0 20px; }
+    h2.hP { font: 400 22px/1.3 inherit; margin: 12px 24px 4px; }
+    .labels { margin: 0 24px 8px; color: #5f6368; font-size: 12px; }
+    .adn { padding: 16px 24px; border-top: 1px solid #f1f3f4; }
+    .gH { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+    .gD { font-weight: 600; }
+    .go { color: #5f6368; }
+    .g3 { color: #5f6368; font-size: 12px; margin-left: auto; }
+    .to { color: #5f6368; font-size: 12.5px; margin-bottom: 12px; }
+    .a3s { white-space: pre-wrap; }
+    .a3s a { color: #1a0dab; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: #c2185b; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 12px; float: left; }
+  </style>
+</head>
+<body>
+  <div class="bar"><span class="logo">Demo Mail</span><span>Looks like Gmail, is not Gmail.</span><span class="note">Impersonation Guard demo · engine runs in this page</span></div>
+  <div class="layout">
+    <nav><div class="active">Inbox</div><div>Starred</div><div>Sent</div><div>Drafts</div></nav>
+    <div class="thread">
+      <h2 class="hP">Last Chance: Complete Your Verification</h2>
+      <div class="labels">Inbox · three conversations shown open, each with its own subject, the way Gmail shows expanded threads</div>
+
+      <div class="adn" data-message-id="msg-institution-lure" data-legacy-message-id="msg-institution-lure">
+        <span class="avatar">S</span>
+        <div class="gH">
+          <span class="gD" email="noreply@notifications.careerlink-platform.com" name="Student Financial Services">Student Financial Services</span>
+          <span class="go">&lt;noreply@notifications.careerlink-platform.com&gt;</span>
+          <span class="g3">Mon, Oct 19, 2026, 10:43 AM</span>
+        </div>
+        <div class="to">to me</div>
+        <div class="ii gt"><div class="a3s aiL">Dear Student,
+
+Our records indicate that your identity verification for the Fall tax reporting form has not yet been completed. Federal law requires all students to verify their identity to ensure accurate tax information is reported.
+
+Please complete this verification by the end of the week. Failure to do so may result in the following consequences:
+Penalties for missing or inaccurate reporting
+Loss of financial aid eligibility, which may affect your ability to pay for classes
+Delays in receiving your official tax form
+
+What You Need to Do
+1. Visit the secure verification link below and complete your verification.
+2. <a href="https://link.northfieldstat.edu/pages/verify">https://link.northfieldstat.edu/pages/verify</a>
+3. Ensure that all information you submit is accurate and matches your official records.
+
+Important: Submitting your information does not complete the verification process. After submission, a representative will text the phone number you provided and request a personal verification code to finalize your verification.
+
+Please be sure to respond to this message to complete the process successfully.
+
+Sincerely,
+Northfield State University
+Tax Information Office</div></div>
+      </div>
+    </div>
+    <div class="thread">
+      <h2 class="hP">Action required: unusual login detected</h2>
+      <div class="adn" data-message-id="msg-hs-support-scam" data-legacy-message-id="msg-hs-support-scam">
+        <span class="avatar" style="background:#1565c0">H</span>
+        <div class="gH">
+          <span class="gD" email="li.support@gmail.com" name="LinkedIn Support">LinkedIn Support</span>
+          <span class="go">&lt;li.support@gmail.com&gt;</span>
+          <span class="g3">Mon, Oct 19, 2026, 1:05 PM</span>
+        </div>
+        <div class="to">to me</div>
+        <div class="ii gt"><div class="a3s aiL">Action required
+
+This is the LinkedIn Security Team. Unusual login detected. Verify your identity at <a href="https://linkedin-verify.app/login">https://linkedin-verify.app/login</a> within 24 hours or your account will be suspended.</div></div>
+      </div>
+    </div>
+    <div class="thread">
+      <h2 class="hP">Summer SWE internship</h2>
+      <div class="adn" data-message-id="msg-acme-recruiter" data-legacy-message-id="msg-acme-recruiter">
+        <span class="avatar" style="background:#2e7d32">L</span>
+        <div class="gH">
+          <span class="gD" email="luis.garcia@acmerobotics.com" name="Luis Garcia">Luis Garcia</span>
+          <span class="go">&lt;luis.garcia@acmerobotics.com&gt;</span>
+          <span class="g3">Tue, Oct 20, 2026, 9:12 AM</span>
+        </div>
+        <div class="to">to me</div>
+        <div class="ii gt"><div class="a3s aiL">Summer SWE internship
+
+Hi Priya, I'm a recruiter at Acme Robotics. We're hiring summer software interns in Austin ($42/hour). The posting is at <a href="https://acmerobotics.com/careers/1234">https://acmerobotics.com/careers/1234</a>. If it looks interesting I'd love to set up a 30-minute intro call next week.</div></div>
+      </div>
+    </div>
+  </div>
+  <script src="/packages/extension/dist/demo.js"></script>
+</body>
+</html>

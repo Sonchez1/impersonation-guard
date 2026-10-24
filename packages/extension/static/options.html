@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Impersonation Guard settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <img src="icon48.png" width="28" height="28" alt="">
+      <h1>Impersonation Guard settings</h1>
+    </header>
+
+    <section class="card">
+      <h2>What to protect</h2>
+      <label class="field">
+        <span>Names and domains to protect (one per line): your school, employer, bank, platforms</span>
+        <textarea id="protected" rows="8" placeholder="northfieldstate.edu&#10;Northfield State University&#10;chase.com&#10;LinkedIn"></textarea>
+      </label>
+      <p class="hint">A message is judged against these names: a sender or link that imitates one of them is flagged, and a message that genuinely comes from one of these domains is trusted unless it asks for something sensitive.</p>
+      <div class="field">
+        <span>Your own domains (learned from your inbox)</span>
+        <ul id="own" class="chips"></ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Behaviour</h2>
+      <label class="check"><input id="showOkBadge" type="checkbox"> Show a small “Looks OK” badge on clean messages too</label>
+      <label class="check"><input id="interruptEverywhere" type="checkbox"> Interrupt before a password or code is typed into a suspicious page, on every site</label>
+      <label class="check"><input id="useBundledBrands" type="checkbox"> Use the bundled list of commonly impersonated organisations</label>
+    </section>
+
+    <section class="card">
+      <h2>Local AI (optional)</h2>
+      <p class="hint">The rules engine runs by default. If you run <a href="https://ollama.com" target="_blank" rel="noreferrer">Ollama</a> on this computer, the guard can also ask a local model to read each message. Nothing leaves your machine either way.</p>
+      <label class="check"><input id="ollamaEnabled" type="checkbox"> Use a local model through Ollama</label>
+      <div class="row">
+        <label class="field"><span>Ollama host</span><input id="ollamaHost" type="text" placeholder="http://localhost:11434"></label>
+        <label class="field"><span>Model</span><input id="ollamaModel" type="text" placeholder="llama3.1:8b"></label>
+      </div>
+      <div class="actions">
+        <button id="testOllama" type="button">Test connection</button>
+        <span id="ollamaResult" class="status"></span>
+      </div>
+      <p class="hint">Ollama must allow this extension's origin. Start it with: <code>OLLAMA_ORIGINS=chrome-extension://* ollama serve</code></p>
+    </section>
+
+    <section class="card">
+      <h2>Bundled organisations</h2>
+      <p class="hint">Added to the check only when a message mentions or links to them.</p>
+      <ul id="brands" class="chips static"></ul>
+    </section>
+
+    <div class="actions sticky">
+      <button id="save" class="primary" type="button">Save</button>
+      <span id="saved" class="status"></span>
+    </div>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

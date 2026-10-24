@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Impersonation Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="top">
+      <img src="icon48.png" width="22" height="22" alt="">
+      <h1>Is this a scam?</h1>
+      <a id="settings" href="#" class="settings">Settings</a>
+    </header>
+
+    <label class="field">
+      <span>Paste the message</span>
+      <textarea id="body" rows="7" placeholder="Paste the text of an email, text message, WhatsApp or DM here"></textarea>
+    </label>
+
+    <div class="row">
+      <label class="field small"><span>From (name)</span><input id="senderName" type="text" placeholder="e.g. Student Financial Services"></label>
+      <label class="field small"><span>From (address)</span><input id="senderAddress" type="text" placeholder="e.g. help@example.com"></label>
+    </div>
+    <label class="field"><span>Subject</span><input id="subject" type="text" placeholder="optional"></label>
+
+    <div id="drop" class="drop" tabindex="0">
+      <input id="file" type="file" accept="image/*" hidden>
+      <span class="drop-text">or drop / paste a screenshot here (text, WhatsApp, DM)</span>
+      <span id="ocr-status" class="ocr-status" hidden></span>
+    </div>
+
+    <div class="actions">
+      <button id="check" class="primary">Check</button>
+      <button id="clear" class="ghost">Clear</button>
+      <span id="status" class="status"></span>
+    </div>
+
+    <section id="result" class="result" aria-live="polite"></section>
+
+    <p class="privacy">Everything is checked on your computer. Nothing you paste or drop is sent anywhere.</p>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

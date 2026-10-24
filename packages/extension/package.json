@@ -1,0 +1,16 @@
+{
+  "name": "@impersonation-guard/extension",
+  "version": "0.1.0",
+  "description": "Impersonation Guard browser extension: inbox verdicts with evidence, point-of-harm interrupts, paste/screenshot checks. Everything runs locally.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch"
+  },
+  "dependencies": {
+    "@impersonation-guard/engine": "*",
+    "tesseract.js": "^5.1.1"
+  }
+}

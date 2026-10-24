@@ -1,0 +1,23 @@
+{
+  "name": "impersonation-guard",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A free, local-first guard against impersonation and phishing for individuals: inbox verdicts with evidence, point-of-harm interrupts, and a paste/screenshot checker. Same engine as impersonation-detector.",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -p packages/engine --noEmit && tsc -p packages/extension --noEmit"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.10.2",
+    "esbuild": "^0.24.0",
+    "happy-dom": "^15.11.7",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
