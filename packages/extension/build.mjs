@@ -30,6 +30,7 @@ const jobs = [
   { entryPoints: [resolve(here, "src/popup/popup.ts")], outfile: resolve(dist, "popup.js"), format: "esm" },
   { entryPoints: [resolve(here, "src/options/options.ts")], outfile: resolve(dist, "options.js"), format: "esm" },
   { entryPoints: [resolve(here, "src/demo/demo.ts")], outfile: resolve(dist, "demo.js"), format: "iife" },
+  { entryPoints: [resolve(here, "src/demo/demo-popup.ts")], outfile: resolve(dist, "demo-popup.js"), format: "esm" },
 ];
 
 function copyStatic() {

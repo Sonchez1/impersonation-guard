@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo popup · Impersonation Guard</title>
+  <link rel="stylesheet" href="/packages/extension/dist/popup.css">
+  <style>
+    html, body { margin: 0; width: auto; }
+    body { background: #eef2f7; min-height: 100vh; display: grid; grid-template-columns: 1fr 380px 1fr; align-items: start; font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #111827; }
+    .side { padding: 56px 48px; max-width: 420px; justify-self: end; }
+    .side h2 { font-size: 26px; line-height: 1.2; margin: 0 0 12px; }
+    .side p { color: #4b5563; font-size: 15px; margin: 0 0 10px; }
+    #frame { margin-top: 36px; width: 380px; background: #fff; border-radius: 12px; box-shadow: 0 18px 50px rgba(17,24,39,.18); overflow: hidden; }
+    .note { padding: 56px 48px; color: #6b7280; font-size: 13px; max-width: 360px; }
+  </style>
+</head>
+<body>
+  <aside class="side">
+    <h2>Paste a text, a DM or a screenshot. Get the reason, not just a score.</h2>
+    <p>The popup checks anything the inbox cannot see: text messages, WhatsApp, Discord and platform DMs.</p>
+    <p>Screenshots are read on your computer. Nothing is uploaded.</p>
+  </aside>
+  <div id="frame"></div>
+  <aside class="note">Demo page served from localhost. The same engine runs inside the page.</aside>
+  <script src="/packages/extension/dist/demo-popup.js"></script>
+</body>
+</html>

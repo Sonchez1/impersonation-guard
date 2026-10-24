@@ -7,7 +7,8 @@
   "scripts": {
     "test": "vitest run",
     "build": "npm run build --workspaces --if-present",
-    "typecheck": "tsc -p packages/engine --noEmit && tsc -p packages/extension --noEmit"
+    "typecheck": "tsc -p packages/engine --noEmit && tsc -p packages/extension --noEmit",
+    "package": "node tools/package.mjs"
   },
   "workspaces": [
     "packages/*"
