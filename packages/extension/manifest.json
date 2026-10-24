@@ -2,35 +2,72 @@
   "manifest_version": 3,
   "name": "Impersonation Guard",
   "version": "0.1.0",
-  "description": "Spots impersonation and phishing in your inbox, explains exactly why, and interrupts before you type a password or code into a fake page. Runs entirely on your computer.",
+  "description": "Spots impersonation and phishing in your inbox, explains why, and stops you before you type a password or code into a fake page.",
   "minimum_chrome_version": "120",
-  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "action": {
     "default_title": "Impersonation Guard: check a message",
     "default_popup": "popup.html",
-    "default_icon": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
   },
   "options_page": "options.html",
-  "background": { "service_worker": "background.js", "type": "module" },
-  "permissions": ["storage"],
-  "host_permissions": ["http://localhost:11434/*", "http://127.0.0.1:11434/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:11434/*",
+    "http://127.0.0.1:11434/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://mail.google.com/*"],
-      "js": ["content-gmail.js"],
-      "css": ["guard.css"],
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content-gmail.js"
+      ],
+      "css": [
+        "guard.css"
+      ],
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://outlook.live.com/*", "https://outlook.office.com/*", "https://outlook.office365.com/*"],
-      "js": ["content-outlook.js"],
-      "css": ["guard.css"],
+      "matches": [
+        "https://outlook.live.com/*",
+        "https://outlook.office.com/*",
+        "https://outlook.office365.com/*"
+      ],
+      "js": [
+        "content-outlook.js"
+      ],
+      "css": [
+        "guard.css"
+      ],
       "run_at": "document_idle"
     },
     {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content-forms.js"],
-      "css": ["guard.css"],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content-forms.js"
+      ],
+      "css": [
+        "guard.css"
+      ],
       "run_at": "document_idle",
       "all_frames": true
     }
@@ -39,6 +76,13 @@
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
   },
   "web_accessible_resources": [
-    { "resources": ["tesseract/*"], "matches": ["<all_urls>"] }
+    {
+      "resources": [
+        "tesseract/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
