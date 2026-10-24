@@ -52,7 +52,7 @@ WHAT IT DOES NOT DO
 
 It does not replace your mail provider's spam filter or your browser's Safe Browsing; it sits after them and explains what they do not. It does not know every brand; add your school, employer and bank in Settings. A rule engine can miss lures written in an unfamiliar register; the optional local model catches more.
 
-Source and documentation: https://github.com/sochimaezema-hs/impersonation-guard
+Source and documentation: https://github.com/Sonchez1/impersonation-guard
 ```
 
 **Category**: Productivity → Tools (or Privacy & Security if offered)
@@ -108,7 +108,7 @@ Optional, off by default: lets the user route message text to an Ollama language
 **Privacy policy URL**
 
 ```
-https://github.com/sochimaezema-hs/impersonation-guard/blob/main/PRIVACY.md
+https://github.com/Sonchez1/impersonation-guard/blob/main/PRIVACY.md
 ```
 
 ## Distribution tab

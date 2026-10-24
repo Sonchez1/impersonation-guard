@@ -6,7 +6,7 @@ whether it is safe and exactly why, and stops you at the moment of harm: before 
 password or a one-time code into a page that is not the real site. Everything runs on your
 own computer. No message, screenshot or address ever leaves it.
 
-It is the consumer door for the [impersonation-detector](https://github.com/sochimaezema-hs/impersonation-detector)
+It is the consumer door for the [impersonation-detector](https://github.com/Sonchez1/impersonation-detector)
 engine. The engine's Python version is for platforms that send messages; this extension is
 for the people who receive them.
 
