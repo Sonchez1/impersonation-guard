@@ -7,6 +7,8 @@ password or a one-time code into a page that is not the real site. Everything ru
 own computer. No message, screenshot or address ever leaves it.
 
 It is the consumer door for the [impersonation-detector](https://github.com/Sonchez1/impersonation-detector)
+engine (paper: [doi:10.5281/zenodo.23716571](https://doi.org/10.5281/zenodo.23716571); Internet-Draft:
+[draft-ezema-lookalike-sender-detection](https://datatracker.ietf.org/doc/draft-ezema-lookalike-sender-detection/)). The consumer door for the
 engine. The engine's Python version is for platforms that send messages; this extension is
 for the people who receive them.
 
