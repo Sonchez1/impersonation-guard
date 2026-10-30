@@ -1,5 +1,7 @@
 # Impersonation Guard
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Impersonation%20Guard-blue)](https://chromewebstore.google.com/detail/impersonation-guard/mebiagclmekccpgfhlpacdocfeppbhjn)
+
 A free, open-source browser extension that protects a person, not a company, from
 impersonation and phishing. It reads the message you have open, says in one sentence
 whether it is safe and exactly why, and stops you at the moment of harm: before you type a
@@ -63,8 +65,10 @@ npm install
 npm run build
 ```
 
-Then open `chrome://extensions`, enable Developer mode, choose *Load unpacked*, and select
-`packages/extension/dist`. A Chrome Web Store listing follows once the first pilot is done.
+**Install from the Chrome Web Store:** [https://chromewebstore.google.com/detail/impersonation-guard/mebiagclmekccpgfhlpacdocfeppbhjn](https://chromewebstore.google.com/detail/impersonation-guard/mebiagclmekccpgfhlpacdocfeppbhjn)
+
+Or, for a developer build: open `chrome://extensions`, enable Developer mode, choose *Load unpacked*, and select
+`packages/extension/dist`.
 
 To try it without installing: `node fixtures/serve.mjs` and open
 `http://localhost:8765/fixtures/demo-inbox.html` and `/fixtures/demo-login.html`. The demo
