@@ -21,6 +21,7 @@ for the people who receive them.
 | **Inbox** (Gmail, Outlook on the web) | A banner above every open message: *Looks OK · Be careful · Likely a scam · Scam*, one plain sentence per finding, the exact thing to look at, and the safe next step. "Show technical detail" reveals the feature or signal that fired. |
 | **Any page** | If a page asks for a password or a one-time code and its address imitates a site you use, or you reached it from a message the guard flagged, a full-screen interrupt stops the submission until you decide. |
 | **Toolbar popup** | Paste a text, a WhatsApp or Discord message, or drop a screenshot. Text is read on your machine and checked the same way. |
+| **Thunderbird** | The same banner above the message you are reading, as a Thunderbird MailExtension. See [`packages/thunderbird`](packages/thunderbird/README.md). |
 
 Every finding is evidence a person can verify themselves: the sender's name beside the
 real address, the link's domain beside the brand it imitates, the thing the message asks
@@ -88,6 +89,7 @@ Then enable *Local AI* in Settings. Without it, the rule classifier is used.
 ```
 packages/engine      TypeScript port of impersonation-detector 0.4.0 (Layers 1-3, fusion, explanations)
 packages/extension   Manifest V3 extension: service worker, inbox overlay, form interrupt, popup, options
+packages/thunderbird Thunderbird MailExtension (Manifest V2): message-display banner, options, .xpi build
 fixtures/            parity.jsonl (Python verdicts for the full benchmark) and the demo pages
 tools/               export_parity.py (regenerates parity.jsonl from the Python package), icon generator
 ```

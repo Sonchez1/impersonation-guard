@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Impersonation Guard for Thunderbird",
+  "version": "0.1.0",
+  "description": "Spots impersonation and phishing in the message you are reading and explains why. Everything runs on your computer; nothing is sent anywhere.",
+  "author": "Sochima Ezema",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "impersonation-guard@sonchez1.github.io",
+      "strict_min_version": "128.0"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "messagesRead",
+    "messagesModify",
+    "storage",
+    "http://localhost:11434/*",
+    "http://127.0.0.1:11434/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

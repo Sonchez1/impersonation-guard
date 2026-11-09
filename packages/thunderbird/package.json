@@ -1,0 +1,16 @@
+{
+  "name": "@impersonation-guard/thunderbird",
+  "version": "0.1.0",
+  "description": "Impersonation Guard for Thunderbird: a local-first MailExtension that reads the displayed message, runs the impersonation-detector engine on your computer, and shows an evidence banner above the message. No network calls except an optional local Ollama model.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "package": "node build.mjs && node build.mjs --xpi"
+  },
+  "dependencies": {
+    "@impersonation-guard/engine": "*"
+  }
+}
